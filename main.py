@@ -23,9 +23,7 @@ def set_uuid_index(data: DataFrame) -> DataFrame:
 
 
 if __name__ == '__main__':
-    file = "data.csv"
-    df = read_csv(file)
+    df = read_csv("dirty-data.csv")
     df = set_uuid_index(df)
     df = remove_headers(df, ["bad-header-1", "bad-header-2"])
-    print(df)
     save_csv("clean-data.csv", df)
