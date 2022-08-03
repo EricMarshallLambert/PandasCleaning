@@ -1,0 +1,17 @@
+scratch.py
+.env
+venv/
+.venv
+env/
+ENV/
+env.bak/
+venv.bak/
+*.yml
+.idea/
+Pipfile
+Pipfile.lock
+.vscode/
+**/.DS_Store
+**/*.py[cod]
+**/*$py.class
+**/__pycache__/

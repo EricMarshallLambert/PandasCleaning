@@ -1,0 +1,6 @@
+name,age,bad-header-1,bad-header-2
+John,42,False,False
+Jane,38,False,False
+Jim,36,False,False
+Jay,34,False,False
+Jason,37,False,False
