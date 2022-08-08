@@ -17,6 +17,10 @@ def remove_headers(data: DataFrame, drop_list: Iterable[str]) -> DataFrame:
     return data.drop(columns=drop_list)
 
 
+def rename_headers(data: DataFrame, column_names) -> DataFrame:
+    return data.rename(columns=column_names)
+
+
 def set_uuid_index(data: DataFrame) -> DataFrame:
     data["id"] = [uuid.uuid4() for _ in range(data.shape[0])]
     return data.set_index("id")
